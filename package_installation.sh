@@ -20,7 +20,6 @@ else
 echo -e "\n---------------------- Failed to install compilation package(s) --------------------------------------\n"
 fi
 
-export https_proxy=https://sas:9ukm6m8o013H6@proxy.localzoho.com:3128
 wget https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/l/libxdo-3.20150503.1-1.el7.x86_64.rpm
 rpm -ivh libxdo-3.20150503.1-1.el7.x86_64.rpm
 if [ $? -eq 0 ]; then
@@ -29,7 +28,6 @@ else
    echo -e "\n--------------------------- libxdo Download Error/Extraction Failed ------------------------------\n"
 fi
 
-export https_proxy=https://sas:9ukm6m8o013H6@proxy.localzoho.com:3128
 wget https://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/x/xdotool-3.20150503.1-1.el7.x86_64.rpm
 rpm -ivh xdotool-3.20150503.1-1.el7.x86_64.rpm
 if [ $? -eq 0 ]; then
@@ -45,7 +43,6 @@ sed -i 's/ (Core)//g' centos_version
 uname -r > kernel_version
 sed -i 's/x86_64/src.rpm/g' kernel_version
 sed -i 's/^/kernel-/' kernel_version
-export https_proxy=https://sas:9ukm6m8o013H6@proxy.localzoho.com:3128
 echo "https://mirror.chpc.utah.edu/pub/vault.centos.org/centos/$(cat centos_version)/updates/Source/SPackages/$(cat kernel_version)" > link
 cat link | tr -d " \t\n\r" > url
 wget $(cat url)
