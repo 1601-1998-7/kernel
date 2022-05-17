@@ -99,4 +99,4 @@ cd ~/rpmbuild/RPMS/`uname -m`/
 echo -e "\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Successfully Created Kernel Package [kernel*.rpm] <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\n"
 cd /home/sas/
 rm -rf centos_version kernel_version x touchpad touchpad.disable mouse mouse.disable keyboard.disable keyboard
-echo -e "\n------------ Switch to root user and install kernel*.rpm and reboot ------------- \n"
+echo -e "\n------------ Switch to root user and install kernel*.rpm and reboot ------------ \n"
