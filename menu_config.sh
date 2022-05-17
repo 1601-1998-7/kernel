@@ -30,7 +30,7 @@ fi
 if grep -q ^# ashlog
 then
 z=1
-echo -e "\n---------------------------- MAKE CONFIG AUTOMATION COMPLETE -----------------------------------\n"
+echo -e "\n---------------------------- MAKE CONFIG AUTOMATION COMPLETE ----------------------------------\n"
 break
 fi
 # Lastline check
