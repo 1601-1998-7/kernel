@@ -1,6 +1,6 @@
 hostName=`hostname`
 
-SUBJECT="Testing mail whether sbin/sendmail works in  $hostName"
+SUBJECT="New kenel available in  $hostName"
 
         MSG=`echo "Hi Team. This is an automated message from Aadi"`
 
